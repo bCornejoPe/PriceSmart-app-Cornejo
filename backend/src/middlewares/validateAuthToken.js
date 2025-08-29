@@ -17,7 +17,8 @@ export const validateAuthToken = (allowedUserTypes = []) => {
       //   const {authToken} = req.cookies;
 
       //3- Extraemos toda la información que tiene el token
-      const decoded = jsonwebtoken.verify(authToken, config.JWT.secret);
+ const decoded = jsonwebtoken.verify(authToken, config.JWT.secret);
+console.log("Decoded token:", decoded); 
 
       //Almacenar los datos del usuario en un request
       req.user = decoded;

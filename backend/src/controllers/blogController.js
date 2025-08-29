@@ -2,7 +2,6 @@ import blogModel from "../models/blog.js";
 import { v2 as cloudinary } from "cloudinary";
 
 import { config } from "../config.js";
-import blog from "../models/blog.js";
 
 //1- Configurar Cloudinary
 cloudinary.config({
